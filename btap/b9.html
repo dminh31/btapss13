@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let text=prompt("nhập từ cần tìm kiếm")
+        // let eng=["tiger","chicken","fish","dog"]
+        // let viet=["hổ","gà","cá","chó"]
+        // let check=true
+        // for (let i = 0; i < eng.length; i++) {
+        //     if (text==eng[i]) {
+        //         console.log(viet[i]);
+        //         check=false;
+        //         break;
+        //     }
+        //     if (check) {
+        //         console.log("k có");
+        //     }
+        // }
+
+        let text = prompt("nhập từ cần tìm kiếm")
+        let eng = ["tiger", "chicken", "fish", "dog"]
+        let viet = ["hổ", "gà", "cá", "chó"]
+        let index=viet.indexOf(text);
+        if (index!=-1) {
+            console.log(`từ ${text} dịch sang tiếng anh là ${eng[index]}`);
+        } else {
+            console.log("từ không tìm thấy!");
+        }
+    </script>
+</body>
+</html>
